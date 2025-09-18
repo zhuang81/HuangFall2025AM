@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(232, 242, 170);
+    color: rgb(4, 1, 27);
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* grouping selectors */
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #d76283, #bbe977);
+}
+
+nav {
+    background-color: rgb(151, 211, 211);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    color: rgb(110, 23, 44);
+    text-decoration: none;
+    margin: 0px 20px; /* shorthand margin left/right */
+    letter-spacing: 3px;
+}
+
+nav a:hover {
+    color: rgb(29, 121, 10);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+main {
+    background-color: rgb(219, 221, 224);
+    padding: 50px 100px;
+}
+
+main h2 {
+    font-size: 65px;
+    margin: 15px 0px;
+    text-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+main h3 {
+    font-size: 30px;
+    margin: 15px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main p {
+    margin: 20px 0px;
+    font-size: 18px;
+    color: rgb(102, 68, 134);
+    word-spacing: 6px;
+    line-height: 1.8;
+}
+
+main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: rgb(99, 162, 214);
+    padding: 10px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffcc00;
+}
+
+
+p {
+    font-family: "Rubik Beastly", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400; /* fixed */
+    font-style: normal;
+}
