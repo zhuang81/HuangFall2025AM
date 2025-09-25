@@ -1,0 +1,155 @@
+body {
+    background-color: #dfdcc1;
+    background-image: url(images/water01.jpg);
+    background-repeat: repeat;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* id rule uses hashtag #,only one per page */
+#wrapper {
+    width: 80%;
+    margin: 80px auto;
+    background-color: #c9e3fb;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+/* class rule uses a period to make a rule about a class, use multiple times*/
+.wow {
+    color: #841717;
+    font-weight: 900;
+    font-style: italic;
+}
+
+header h1 {
+    font-family: "Bitcount Ink", "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 56px;
+    font-variant: small-caps;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+header h2 {
+    font-family: "Bebas Neue", "Bitcount Ink", sans-serif;
+    font-size: 20px;
+    margin: 0 0 18px 0;
+    color: #3C6579;
+
+}
+nav {
+    margin: 10px 0 24px 0;
+    display: flex;
+    gap: 30px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #91bccc; 
+    color: #3C6579;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+nav a:hover {
+  color: #681f25;
+}
+
+main h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+    color:  #3C6579;
+}
+
+main h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #3C6579;
+}
+
+main p {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+main table {
+    border: 20px solid #91bccc;
+    background-color: #c11894;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+main table th {
+    border: 3px solid #3c6579;
+    background-color: #7c9bd9;
+    padding: 10px 12px;
+    text-align: left;
+}
+main table td {
+    border: 3px solid #3c6579;
+    background-color: #f2f3ec;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 26px;
+    border-top: 2px solid #3C6579;
+    padding-top: 12px;
+}
+img {
+    max-width: 100%;
+    width: 320px;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px #0000001f;
+}
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+.featured-grid img {
+  width: 100%;       
+  height: 250px;     
+  object-fit: cover; 
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+#lead {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #3C6579;
+}
+
+#secondary {
+  font-size: 15px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #410b0b;
+}
+.accent {
+  color: #841717;
+  font-weight: bold;
+}
+
+.emphasis {
+  color: #C11894;
+  text-decoration: underline;
+}
