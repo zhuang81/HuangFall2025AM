@@ -1,0 +1,142 @@
+body {
+    background-color: #000;
+    background-image: url("images/moss04.jpg");
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    /* background-position-y: bottom;  */
+
+    margin: 0;
+    padding: 0;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    /* 200 – 800 */
+    font-style: normal;
+
+}
+
+/* id rule uses hashtag #, only one per page */
+#wrapper {
+    margin: 100px auto;
+    width: 60%;
+    background-color: #f9f5f5;
+    padding: 30px 50px;
+    /* background-image: url("images/moss03.jpg"); */
+}
+
+/* class rules use a period to make a rule about a class, use multiple times */
+.wow {
+    color: #f00;
+    font-weight: 900;
+    font-style: italic;
+    /*border: solid 10px #4d3c0f;*/
+    /*padding: 10px;*/
+}
+
+header h1 {
+
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 66px;
+}
+
+nav {
+    background-color: #abab7c;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+nav a {
+    border: 5px solid #433204;
+    margin: 0px 15px;
+    padding: 20px 15px;
+    background-color: #f7f7e2;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #e5e55b;
+}
+
+main p {
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+table,
+th,
+td,
+tr {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+main table {
+    border: 10px solid rgb(192, 192, 192);
+    background-color: rgb(255, 207, 74);
+
+}
+
+main table th {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(155, 155, 155);
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 33px;
+    padding: 22px;
+
+}
+
+main table td {
+    border: 5px solid rgb(77, 77, 77);
+    background-color: rgb(255, 255, 255);
+
+}
+
+main h2 {
+    border: solid 5px #372c11;
+    background-color: #f7f7e2;
+    font-size: 30px;
+    padding: 35px 10px 20px 15px;
+    margin: 50px 0px 50px 0px;
+    font-style: italic;
+}
+
+main div.featuredimage {
+    border: solid 10px #67671f;
+    background-color: #abab7c;
+    padding: 20px;
+    width: 200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+main div.featuredimage img {
+    width: 100%;
+}
+
+main div.longbody p {
+    border: dashed 10px #372c11;
+    ;
+    padding: 20px 30px;
+    margin: 50px 0px 50px 0px;
+    text-align: right;
+    box-shadow: 20px 6px 15px rgba(0, 0, 0, 0.2);
+}
+main div.headings {
+    text-align: center;
+    border: dotted 5px #372c11;
+    border-radius: 20px;
+    padding: 0% 20px 20px 20px;
+}
