@@ -1,0 +1,127 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #f6facb;
+    color: rgb(2, 2, 82)
+}
+
+div.container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #dad37d;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #edf4ad;
+}
+
+nav {
+    background-color: #f4f017;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #13583A;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 120px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav a:hover {
+    color: #33E89A;
+}
+
+main {
+    background-color: #ebef6e;
+    width: 70%;
+    float: left;
+}
+
+section {
+    background-color: #dad37d;
+}
+
+aside {
+    background-color: #dad37d;
+    width: 30%;
+    float: left;
+}
+
+footer {
+    background-color: #edf4ad;
+    float: none;
+    clear: both;
+}
+
+div.boxes {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #dad37d;
+    float: left;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border: 5px solid #696734;}
+
+
+.boxes main {
+    width: 60%;
+}
+
+.boxes aside {
+    width: 40%;
+    padding: 20px;
+}
+
+.boxes footer {
+    padding: 20px;
+    clear: both;
+}
+
+.boxes section {
+    margin:30px;
+    padding: 20px;
+    border-radius: 30px;
+    display: inline-block;
+}
+aside:nth-of-type(2) {
+    background-color: #ececbc;
+}
+aside:nth-of-type(3) {
+    background-color: #f7f777;
+}
