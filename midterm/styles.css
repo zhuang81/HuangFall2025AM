@@ -1,0 +1,356 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* END border-box fix */
+
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /*  set max width of .container but display body as flex and center it's contents */
+  justify-content: center;
+  /*  this centers the contents of the body like .container */
+  background-image: url(images/background.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+
+h1,
+h2,
+h3
+{
+  text-transform: uppercase;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  animation: tada 2s;
+}
+
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+/* Add padding to all of the .container child elements */
+.container>* {
+  padding: 20px;
+}
+
+
+.container {
+  color: #000000;
+  display: flex;
+  /* use flex box */
+  flex-wrap: wrap;
+  /* wrap */
+  max-width: 1100px;
+}
+
+
+header {
+  background: #000000;
+  flex: 1 0 100%;
+  /* grow on, shrink off, span width of browser */
+  order: 1;
+  /* display order regardless of html structure */
+  top: 0;
+  z-index: 1;
+  border-bottom: 5px solid #ffffff;
+}
+
+
+main {
+  background: #000000;
+  flex: 1 1 450px;
+  order: 3;
+
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+
+
+nav {
+  background: #000000;
+  flex: 1 0 130px;
+  order: 2;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+nav li {
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  color: black;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: #d7f0b7;
+}
+
+nav a.special-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.special-link:hover {
+  background-color: #d7f0b7;
+  color: black;
+  animation: bounce 1s infinite;
+}
+
+.icon {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+aside {
+  background: #000000;
+  flex: 2 0 300px;
+  /* grow but do not shrink less than basis */
+  order: 4;
+}
+
+aside div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+aside img {
+  display: block;
+  border-radius: 10px;
+  width: 48%;
+  object-fit: cover;
+}
+
+footer {
+  background: black;
+  flex: 1 0 100%;
+  /* grow on, shrink off, span width of browser */
+  order: 5;
+  border-top: 5px solid #ffffff;
+}
+
+.wrapper {
+  background: #ffffff;
+  width: 90%;
+  margin: 10px auto;
+
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 10px;
+}
+
+header {
+  background: #000000;
+  /* span all 12 cols*/
+  grid-column: 1 /15;
+}
+
+main {
+  background: #000000;
+  /* span 6 cols */
+  grid-column: 4/15;
+}
+
+nav {
+  background: #000000;
+  /* span 3 cols */
+  grid-column: 1/4;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  background: #000000;
+  /* span all 12 cols*/
+  grid-column: 1 /15;
+}
+
+.animationgallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  height: 100%;
+}
+.animationgallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  animation:fadeInRight 1.5s ;
+
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animationgallery img:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Likebutton {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  color: #000000;
+  width: 100%;
+}
+.Likebutton:hover {
+  background-color: #d7f0b7;
+  animation: heartBeat 1s infinite;
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.7);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
